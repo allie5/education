@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+string name = "Bob";
+
+string& get_name() {
+    return name;
+}
+
+int main() {
+
+    cout << get_name() << endl;
+    get_name() = "Allen";
+    cout << get_name() << endl;
+}
+   

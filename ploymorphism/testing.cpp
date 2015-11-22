@@ -18,14 +18,17 @@ class Email : public Message {
         message = message_in;
     }
 
-    virtual string get_string() {
+    virtual string get_string();
+    virtual ~Email() {}
+
+};
+
+string Email::get_string() {
         mess();
         cout << "Sent by " << sender << endl;
         return message;
     }
-    virtual ~Email() {}
 
-};
 static void mess() {
 
     cout << "Message Sent" << endl;
