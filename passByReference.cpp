@@ -11,9 +11,8 @@ string& get_name() {
 }
 
 int main() {
-
+    cout << "Hello" << endl;
     cout << get_name() << endl;
     get_name() = "Allen";
     cout << get_name() << endl;
-}
-   
+} 
