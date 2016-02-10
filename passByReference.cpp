@@ -4,7 +4,7 @@
 using namespace std;
 
 
-string name = "5";
+string name = "Bob";
 
 string& get_name() {
     return name;
